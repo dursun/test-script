@@ -1,0 +1,28 @@
+{
+  "name": "test-script",
+  "version": "1.0.0",
+  "description": "REST API Provider for script testing",
+  "author": "Dursun Can Turan",
+  "license": "WTFPL",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "standard": "*"
+  },
+  "scripts": {
+    "start": "node --tls-min-v1.0 app.js",
+    "test": "standard"
+  },
+  "standard": {
+    "ignore": [
+      "**/out/",
+      "/lib/select2/",
+      "/lib/ckeditor/",
+      "tmp.js"
+    ]
+  },
+  "main": "app.js"
+}

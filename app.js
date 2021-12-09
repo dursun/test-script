@@ -49,7 +49,7 @@ app.post('/script/test/:language', function (req, res) {
     })
     return
   }
-  // Send script to the specified language
+  // route script to the specified language
   languageService.run(language, script)
     .then(function (result) {
       res.status(200)
